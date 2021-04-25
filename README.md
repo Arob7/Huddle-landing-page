@@ -1,2 +1,2 @@
 # Huddle-landing-page
-A landing page the mobile responsive
+A mobile responsive landing page
