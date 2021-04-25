@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  color: azure;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: azure;
+}
+
+.logo {
+  width: 120px;
+}
+
+button {
+  color: hsl(257, 40%, 49%);
+  background-color: azure;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 25px;
+  padding: 5px 35px 5px 35px;
+  font-size: 12px;
+  box-shadow: 3px 3px 3px rgb(68, 66, 66);
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: azure;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 25px;
+  padding: 5px 35px 5px 35px;
+  font-size: 12px;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+  border-radius: 25px;
+  border: 2px solid hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  border-radius: 15px;
+  border: 1.5px solid whitesmoke;
+  padding: 5px;
+}
