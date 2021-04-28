@@ -1,19 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
-body,
-html {
-  height: 100%;
+/* FOR MOBILE DEVICES */
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .mockup {
+    flex-direction: column;
+  }
+
+  img.img-mockup {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  img.img-logo {
+    margin: 15px 0px 30px 20px;
+  }
+
+  div.info {
+    padding-left: 20px;
+  }
+
+  div.social {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.6666666666666666em;
+    line-height: 23px;
+  }
+
+  ul {
+    padding-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  button {
+    margin: 30px auto 20px auto;
+    display: block;
+    width: 200px;
+    height: 38px;
+    border-radius: 50px;
+    margin-left: 80px;
+    border: none;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 8px 6px -6px black;
+    font-size: 0.9rem;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+  }
+
+  .fa-facebook-f:hover,
+  .fa-twitter:hover,
+  .fa-instagram:hover {
+    border-radius: 25px;
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+  }
+
+  .fa-facebook-f,
+  .fa-twitter,
+  .fa-instagram {
+    border-radius: 15px;
+    border: 1.5px solid whitesmoke;
+    padding: 5px;
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
+/* FOR DESKTOP DEVICES */
 
 body {
   background-color: hsl(257, 40%, 49%);
   font-family: "Open Sans", sans-serif;
   color: azure;
-}
-
-.bg {
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
   background-image: url("./images/bg-desktop.svg");
-  height: 100%;
 }
 
 h1 {
@@ -66,18 +155,29 @@ button:hover {
 ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 80px;
+  align-items: center;
+
+  /* position: fixed; */
 }
 
 div.social {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 125px;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .img-mockup {
-  width: 400px;
   margin-left: 50px;
+}
+
+img.img-mockup {
+  width: 350px;
 }
 
 .img-logo {
@@ -87,8 +187,9 @@ div.social {
   margin-left: 50px;
 }
 
-.mockup {
+div.mockup {
   display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -98,7 +199,8 @@ h1 {
 
 p {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 14px;
+  flex-wrap: nowrap;
 }
 
 .info {
